@@ -1,0 +1,22 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: rgb(100, 86, 86);
+
+}
+
+.main-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+@import './navBar.scss';
+@import '../style/home.scss';
+@import './expense.scss';
+@import './addExpense.scss';
+@import './login.scss';
+@import './signUp.scss';
+@import './chart.scss'

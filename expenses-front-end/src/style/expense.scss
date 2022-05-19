@@ -1,0 +1,58 @@
+.app-wrapper {
+    width: 100%;
+
+    .expenses-container {
+        display: grid;
+        align-items: center;
+        width: 40%;
+        border-style: groove;
+        
+        div {
+            display: flex;
+            width: 100%;
+
+            
+            .expense-container {
+                background-color: rgb(114, 113, 120);
+                margin: 20px;
+                border-radius: 8px rgb(0, 0, 0);
+                padding: 10px 25px 10px 25px;
+                width: 100%;
+                display: flex;
+                text-align: center;
+                flex-direction: column;
+                
+                
+
+                .btn-container {
+                    justify-content: space-evenly;
+                    display: grid;
+                    align-items: center;
+                    padding: 5px;
+                    width: 60%;
+
+                    .btn {
+                        font-family: 'Sans-serif';
+                        font-size: 18px;
+                        background-color: rgb(141, 151, 154);
+                        border-radius: 4px;
+                        border: 1px solid transparent;
+                        transition: 0.2s ease-in-out;
+                        width: 55px;
+                        height: 30px;
+
+                        &:hover {
+                            color: white;
+                            border: 1px solid rgb(113, 14, 14);
+                            text-shadow: 1px 1px 1px grey;
+                        }
+
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+

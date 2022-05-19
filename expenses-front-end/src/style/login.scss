@@ -1,0 +1,55 @@
+.login-container {
+
+    .login-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+
+    h2 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 100px;
+        text-shadow: 2px 2px 5px white;
+    }
+
+    .login-form-input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 25%;
+        width: 100vw;
+    }
+        input {
+            background-color: white;
+            border-radius: 3px;
+            border: none;
+            height: 30px;
+            width: 250px;
+            font-size: 19px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+        
+    }
+}
+
+.btn {
+    font-family: 'Caveat', cursive;
+    font-size: 23px;
+    background-color: white;
+    border-radius: 4px;
+    text-shadow: 1px 1px 1px transparent;
+    border: 1px solid transparent;
+    transition: 0.2s ease-in-out;
+    width: 55px;
+    height: 30px;
+
+    &:hover {
+        box-shadow: inset 1px 1px 1px black;
+    }
+}

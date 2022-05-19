@@ -1,0 +1,13 @@
+.home-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .username-title h1 {
+        color: rgb(14, 9, 9);
+        font-family: 'Sans-serif', ;
+        font-size: 100px;
+        text-shadow: 2px 2px 5px white;
+    }
+}

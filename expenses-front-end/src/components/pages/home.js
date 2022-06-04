@@ -5,7 +5,6 @@ import Expense from '../expense/expense';
 import AddExpense from '../expense/addExpense';
 
 
-
 export default  function Home(props) {
     const [allExpenses, setAllExpenses] = useState([]);
     const [loggedIn, setLoggedIn] = useState(false);
@@ -49,6 +48,8 @@ export default  function Home(props) {
         return allExpenses.map(expense => {
             return <div key={expense.id}><Expense expense={expense} handleEditClick={handleEditClick} handleDeleteClick={handleDeleteClick} />
                     </div>
+                 
+                    
         })
     }
 
@@ -65,14 +66,14 @@ export default  function Home(props) {
     return (
         <div className='home-page-container'>
             <div className='username-title'>
-                <h1>{loggedIn ? Cookies.get('username') : ''} expenses: </h1>
+                <h1>Welcome {loggedIn ? Cookies.get('username') : ''}</h1>
             </div>
             <div className='expenses-container'>
-                {editMode ? <AddExpense expense={expenseToEdit} edit={editMode} request={'update'} handleEditSubmit={handleEditSubmit}/> : renderExpenses()}
-                
+                {editMode ? <AddExpense expense={expenseToEdit} edit={editMode} request={'update'} handleEditSubmit={handleEditSubmit}/> 
+                : loggedIn ? renderExpenses() : 'Please sign up or log in to continue'}
             </div>
             
         </div>
+        
     )
-
 }

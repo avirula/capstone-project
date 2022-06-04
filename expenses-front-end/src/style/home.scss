@@ -6,8 +6,22 @@
 
     .username-title h1 {
         color: rgb(14, 9, 9);
-        font-family: 'Sans-serif', ;
+        font-family: 'Caveat, cursive';
         font-size: 100px;
-        text-shadow: 2px 2px 5px white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
+        // text-shadow: 2px 2px 5px white;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+    .home-page-container {
+
+        .username-title h1 {
+            font-size: 50px;
+        }
     }
 }
+
+

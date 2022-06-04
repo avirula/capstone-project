@@ -59,7 +59,7 @@ export default function Login() {
 
             <form onSubmit={(e) => handeleSubmit(e)}>
                 <input type='text' placeholder='Username' value={username} name='username' onChange={(e) => setUsername(e.target.value)} />
-                <input type='text' placeholder='Password' value={password} name='password' onChange={(e) => setPassword(e.target.value)} />
+                <input type='password' placeholder='Password' value={password} name='password' onChange={(e) => setPassword(e.target.value)} />
 
                 <button type='submit'>Submit</button> 
             </form>

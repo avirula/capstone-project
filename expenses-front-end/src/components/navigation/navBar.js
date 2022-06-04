@@ -25,19 +25,25 @@ export default function NavBar(props) {
         <div className='top-nav-link-wrapper'>
             <div className='nav-link'>
                 <A className='link' href='/'>
-                    Home
+                {loggedIn ? 'Home' : ''}
                 </A>
 
             </div>
             <div className='nav-link'>
                 <A className='link' href='/add'>
-                    Add Expense
+                {loggedIn ? 'Add-Expense' : ''}
                 </A>
 
             </div>
             <div className='nav-link'>
                 <A className='link' href='/charts'>
-                    Charts
+                {loggedIn ? 'Chart' : ''}
+                </A>
+
+            </div>
+            <div className='nav-link'>
+                <A className='link' href='/table'>
+                {loggedIn ? 'Table' : ''}
                 </A>
 
             </div>

@@ -3,8 +3,10 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 50vh;
     width: 100vw;
+    column-gap: 150px;
+    row-gap: 10px;
 
     h2 {
         font-size: 80px;
@@ -12,22 +14,28 @@
         text-shadow: 2px 2px 5px white;
     }
 
-    input {
-        background-color: white;
-        border-radius: 3px;
-        border: none;
-        height: 30px;
-        width: 250px;
-        font-size: 19px;
+    .input-form-container {
+        display: flex;
+        column-gap: 5px;
 
-        &:focus {
-            outline: none;
+        input {
+            background-color: white;
+            border-radius: 3px;
+            border: none;
+            height: 30px;
+            width: 250px;
+            font-size: 19px;
+            text-align: center;
+
+            &:focus {
+                outline: none;
+            }
         }
     }
 
-    .btn {
+    .submit-btn {
         font-family: 'Caveat', cursive;
-        font-size: 23px;
+        font-size: 15px;
         background-color: white;
         border-radius: 4px;
         text-shadow: 1px 1px 1px transparent;
@@ -41,3 +49,17 @@
         }
     }
 }
+
+@media screen and (max-width: 770px) {
+        
+    .signup-form {
+        
+        .input-form-container {
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+        }
+    }
+}    
+        
+

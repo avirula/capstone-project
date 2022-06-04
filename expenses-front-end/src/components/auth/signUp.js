@@ -53,11 +53,10 @@ export default function SignUp() {
             <form className='signup-form' onSubmit={(e) => handleSubmit(e)}>
                 <div className='input-form-container'>
                     <input type='text' placeholder='Username' value={username} name='username' onChange={(e) => setUsername(e.target.value)} />
-                    <input type='text' placeholder='Password' value={password} name='password' onChange={(e) => setPassword(e.target.value)} />
-                    <input type='text' placeholder='Confirm Password' value={confirmPassword} name='confirmPassword' onChange={(e) => setConfirmPassword(e.target.value)} />
-                    <button className='submit-btn'>Submit</button>
-
+                    <input type='password' placeholder='Password' value={password} name='password' onChange={(e) => setPassword(e.target.value)} />
+                    <input type='password' placeholder='Confirm Password' value={confirmPassword} name='confirmPassword' onChange={(e) => setConfirmPassword(e.target.value)} />
                 </div>
+                <button className='submit-btn'>Submit</button>
             </form>
 
             <h6 style={{visibility: error ? 'visible' : 'hidden'}}>{errorMessage}</h6>

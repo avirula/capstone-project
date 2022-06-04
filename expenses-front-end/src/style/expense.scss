@@ -4,8 +4,11 @@
     .expenses-container {
         display: grid;
         align-items: center;
-        width: 40%;
         border-style: groove;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+
         
         div {
             display: flex;
@@ -26,10 +29,10 @@
 
                 .btn-container {
                     justify-content: space-evenly;
-                    display: grid;
+                    display: column;
                     align-items: center;
                     padding: 5px;
-                    width: 60%;
+                    width: 70%;
 
                     .btn {
                         font-family: 'Sans-serif';
@@ -53,6 +56,12 @@
         }
 
 
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .app-wrapper .expenses-container {
+        font-size: 12px;
     }
 }
 

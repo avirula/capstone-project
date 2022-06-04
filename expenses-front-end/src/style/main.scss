@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    background: rgb(100, 86, 86);
+    background: rgb(109, 106, 106);
 
 }
 
@@ -19,4 +19,5 @@ html, body {
 @import './addExpense.scss';
 @import './login.scss';
 @import './signUp.scss';
-@import './chart.scss'
+@import './chart.scss';
+@import './expenseTable.scss'

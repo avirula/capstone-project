@@ -7,11 +7,12 @@
         align-items: center;
         width: 100vw;
         height: 100vh;
+        
 
     h2 {
-        font-family: 'Dancing Script', cursive;
         font-size: 100px;
         text-shadow: 2px 2px 5px white;
+        font-family: 'Grandstander', cursive;
     }
 
     .login-form-input {
@@ -39,7 +40,7 @@
 }
 
 .btn {
-    font-family: 'Caveat', cursive;
+    font-family: 'Grandstander', cursive;
     font-size: 23px;
     background-color: white;
     border-radius: 4px;

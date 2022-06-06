@@ -10,6 +10,7 @@
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+        font-family: 'Grandstander', cursive;
 
         input {
             background-color: aliceblue;
@@ -18,13 +19,14 @@
             align-items: center;
             text-align: center;
             border-style: groove;
+            font-family: 'Grandstander', cursive;
         }
         
     }
 
     .btn {
-        font-family: 'Sans-serif';
-        font-size: 15px;
+        font-family: 'Grandstander', cursive;
+        font-size: 13px;
         background-color: rgb(103, 115, 115);
         border-radius: 4px;
         text-shadow: 1px 1px 1px transparent;

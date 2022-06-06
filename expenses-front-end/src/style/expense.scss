@@ -9,6 +9,7 @@
         font-size: 20px;
         font-weight: bold;
         text-align: center;
+        font-family: 'Grandstander', cursive;
 
         
         div {
@@ -34,16 +35,18 @@
                     align-items: center;
                     padding: 5px;
                     width: 70%;
+                    font-family: 'Grandstander', cursive;
 
                     .btn {
-                        font-family: 'Sans-serif';
-                        font-size: 18px;
+                        font-family: 'Grandstander', cursive;
+                        font-size: 15px;
                         background-color: rgb(141, 151, 154);
                         border-radius: 4px;
                         border: 1px solid transparent;
                         transition: 0.2s ease-in-out;
                         width: 55px;
                         height: 30px;
+
 
                         &:hover {
                             color: white;
